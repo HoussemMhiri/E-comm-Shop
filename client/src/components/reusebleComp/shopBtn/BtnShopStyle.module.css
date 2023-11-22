@@ -1,0 +1,12 @@
+.btnCont {
+  width: 126px;
+  height: 47px;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.btnCont:hover {
+  transform: scale(1.01);
+}

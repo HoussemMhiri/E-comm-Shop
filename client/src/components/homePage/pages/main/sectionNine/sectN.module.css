@@ -1,0 +1,37 @@
+.imgs {
+  height: 399px;
+  width: 320px;
+}
+
+.allCont {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.h3 {
+  margin: 1em 0;
+  font-size: 40px;
+  width: 400px;
+  text-align: center;
+}
+
+.a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+.a:hover {
+  border-bottom: 2px solid black;
+}
+
+.imgsCont {
+  width: 1320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

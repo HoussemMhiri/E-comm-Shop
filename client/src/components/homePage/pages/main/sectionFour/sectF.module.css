@@ -1,0 +1,51 @@
+.AllCont {
+  height: 40.625rem;
+  width: 82em;
+  margin: 3.5em auto;
+  background-color: #f3f3f3;
+  position: relative;
+  margin-top: 5em;
+}
+.imgSect {
+  width: 40.5em;
+  height: 100%;
+}
+
+.DescCont {
+  position: absolute;
+  top: 6em;
+  left: 45em;
+}
+
+.DescContH3 {
+  width: 86%;
+  font-size: 2.688em;
+  height: 13rem;
+  margin-bottom: 0.5em;
+}
+.DescContP {
+  width: 86%;
+  height: 7.188rem;
+  font-size: 1.125em;
+  font-weight: 600;
+  color: rgb(109, 108, 108);
+  line-height: 1.875rem;
+}
+
+.styleBtn {
+  width: 150px;
+  height: 47px;
+  background: none;
+  border: none;
+  background-color: #123026;
+  color: white;
+  border-radius: 5px;
+  margin-top: 1em;
+  transition: all 0.1s ease-in-out;
+  padding-bottom: 0.4em;
+  letter-spacing: 0.5px;
+}
+
+.styleBtn:hover {
+  transform: scale(1.01);
+}

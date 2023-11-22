@@ -1,0 +1,18 @@
+.cardCont {
+  height: 377px;
+  width: 319px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img {
+  width: 319px;
+  height: 330px;
+  transition: transform 0.2s ease;
+  margin-bottom: 1em;
+}
+
+.cardCont:hover .img {
+  transform: scale(1.02);
+}

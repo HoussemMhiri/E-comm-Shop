@@ -1,0 +1,9 @@
+export { default as SectTwo } from "./sectionTwo/SectTwo";
+export { default as SectThree } from "./sectionThree/SectThree";
+export { default as SectFour } from "./sectionFour/SectFour";
+export { default as SectFive } from "./sectionFive/SectFive";
+export { default as SectSix } from "./sectionSix/SectSix";
+export { default as SectSeven } from "./sectionSeven/SectSeven";
+export { default as SectEight } from "./sectionEight/SectEight";
+export { default as SectNine } from "./sectionNine/SectNine";
+export { default as NewsL } from "./newsletter/NewsL";

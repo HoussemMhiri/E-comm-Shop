@@ -1,0 +1,44 @@
+.inp_cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.inp {
+  width: 50%;
+  height: 2.813em;
+  padding: 20px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.inp:hover {
+  box-shadow: 0px 2px 11px 4px rgba(190, 180, 180, 0.75);
+  border: 1px solid gray;
+}
+.inp::placeholder {
+  letter-spacing: 1px;
+}
+
+.closeMark {
+  margin-left: 1em;
+}
+
+.closeMark:hover {
+  color: grey;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.searchMark {
+  position: absolute;
+  right: 17em;
+  top: 1.7em;
+  cursor: pointer;
+}
+
+.searchMark:hover {
+  transform: scale(1.1);
+  color: grey;
+}

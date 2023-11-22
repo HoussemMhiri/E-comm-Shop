@@ -1,0 +1,139 @@
+.carousel {
+  display: flex;
+  min-height: 400px;
+  width: 100%;
+  max-width: 1520px;
+}
+
+.carousel_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel_card {
+  display: flex;
+  flex: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease-in-out;
+}
+
+.carousel_card_active {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.carousel_img {
+  object-fit: cover;
+  width: 100%;
+  height: 720px;
+}
+
+.carousel_img3 {
+  object-position: 0 -28em;
+}
+
+.card_overlay {
+  position: absolute;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 15em;
+  color: white;
+  justify-content: space-evenly;
+}
+
+.card_p {
+  font-size: 18px;
+  color: rgb(255, 247, 247);
+  font-weight: 600;
+}
+
+.card_title {
+  font-size: 52px;
+  width: 550px;
+  text-align: center;
+}
+
+.styleBtn {
+  width: 139px;
+  height: 47px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  transition: 0.2s ease-in-out;
+}
+.styleBtn:hover {
+  transform: scale(1.01);
+}
+.allCarouselControlContainer {
+  position: absolute;
+  top: 48.5em;
+  width: 100%;
+  border-bottom: 1px solid rgb(219, 208, 208);
+}
+
+.carousel_arrowsCont {
+  position: absolute;
+  top: -2.813em;
+  left: 40rem;
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+.arrowLeft,
+.arrowRight {
+  font-size: 20px;
+  color: gray;
+}
+.arrowLeft:hover,
+.arrowRight:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+.carousel_arrowLeft,
+.carousel_arrowRight {
+  cursor: pointer;
+}
+
+.carousel_pagination {
+  position: absolute;
+  top: -2.188em;
+  left: 43.3rem;
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+.pagination_dot {
+  width: 10px;
+  height: 10px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination_dot:hover {
+  transform: scale(1.1);
+}
+
+.pagination_dot_active {
+  background-color: black;
+  transition: 0.5s ease-in-out;
+}
+
+.carousel_pausePlay {
+  position: absolute;
+  top: -2.813em;
+  left: 53.3rem;
+  cursor: pointer;
+}

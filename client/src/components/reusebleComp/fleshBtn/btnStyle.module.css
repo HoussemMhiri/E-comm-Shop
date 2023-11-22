@@ -1,0 +1,17 @@
+.btns {
+  border: none;
+  background: none;
+  margin-right: 0.3em;
+  position: relative;
+}
+
+.btnsCont {
+  cursor: pointer;
+}
+.arrow {
+  transition: transform 0.2s ease;
+}
+
+.btnsCont:hover .arrow {
+  transform: scaleX(1.2);
+}

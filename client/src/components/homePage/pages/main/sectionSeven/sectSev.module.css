@@ -1,0 +1,44 @@
+.AllCont {
+  height: 700px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5em;
+}
+
+.imgCont {
+  height: 650px;
+  width: 649px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.descCont {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stars {
+  font-size: 4em;
+  font-weight: bold;
+}
+.desc {
+  width: 510px;
+  font-size: 20px;
+  color: gray;
+  font-style: italic;
+  line-height: 32px;
+  letter-spacing: 0.6px;
+}
+.name {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: gray;
+}

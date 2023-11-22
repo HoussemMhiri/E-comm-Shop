@@ -1,0 +1,49 @@
+.AllCardsCont {
+  /*   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+  width: 100%;
+}
+.inner {
+  display: flex;
+  white-space: nowrap;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sliderBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.btnsArrow {
+  margin: 0 1em;
+  border: none;
+  color: gray;
+  font-size: 23px;
+  transition: all 0.2s ease-in-out;
+}
+.btnsArrow:hover {
+  color: #123026;
+  transform: scale(1.1);
+}
+
+.btnsArrowOne {
+  color: rgb(206, 200, 200);
+  cursor: not-allowed;
+  margin: 0 1em;
+  border: none;
+  background: none;
+  font-size: 23px;
+  transition: all 0.2s ease-in-out;
+}
+.btnsArrowOne:hover {
+  cursor: not-allowed;
+}
+
+.spanInd {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(100, 96, 96);
+}

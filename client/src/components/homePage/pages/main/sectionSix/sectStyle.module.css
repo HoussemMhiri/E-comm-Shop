@@ -1,0 +1,52 @@
+.allCont {
+  height: 624px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 12em;
+}
+
+.secCont {
+  width: 734px;
+}
+
+.descCont {
+  width: 780px;
+  margin-bottom: 2em;
+}
+.Accord {
+  border-left: none !important;
+  border-right: none !important;
+  --bs-accordion-active-bg: none;
+  --bs-accordion-active-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+.Accord:hover {
+  --bs-accordion-btn-bg: rgb(238, 230, 230);
+}
+.Accord:hover .AccordTitle {
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+.AccordTitle {
+  font-weight: 600;
+  margin-left: 1em;
+}
+.AccordIcon {
+  font-size: 20px;
+}
+.AccordBody {
+  text-align: left;
+}
+
+.descH3 {
+  font-size: 40px;
+  margin-bottom: 0.5em;
+}
+
+.descP {
+  font-size: 17px;
+  color: rgb(110, 104, 104);
+  text-align: center;
+}
