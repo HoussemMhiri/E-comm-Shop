@@ -1,0 +1,66 @@
+.background {
+  max-width: 100%;
+  min-height: 420px;
+  background-size: cover;
+  background-position: 20% 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.desc {
+  text-align: center;
+  min-height: 257.7px;
+  max-width: 58.6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.h3 {
+  font-size: 55px;
+  max-width: 51.25rem;
+  color: white;
+  z-index: 2;
+}
+
+.p {
+  font-size: 25px;
+  letter-spacing: 0.6px;
+  color: rgb(255, 246, 246);
+  font-weight: 600;
+  z-index: 2;
+}
+@media (max-width: 749px) {
+  .background {
+    min-height: 280px;
+    position: relative;
+  }
+
+  .desc {
+    max-width: 43.75rem;
+    position: absolute;
+    top: 20em;
+  }
+  .h3 {
+    font-size: 45px;
+    max-width: 51.25rem;
+    color: black;
+  }
+
+  .p {
+    color: rgb(124, 124, 124);
+    font-weight: 400;
+  }
+}

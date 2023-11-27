@@ -1,0 +1,8 @@
+.filterCont {
+  display: flex;
+  width: 87%;
+  max-width: 87%;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 51px;
+}

@@ -1,0 +1,41 @@
+.allCardCont {
+  max-width: 319px;
+}
+
+.AllCont {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.AllCont:hover .pStyle {
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+
+.pStyle {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.imgCont {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 20rem;
+  cursor: pointer;
+}
+
+.Btn {
+  width: 100%;
+  border: none;
+  background: none;
+  background-color: #123026;
+  color: white;
+  padding: 7px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.Btn:hover {
+  background-color: rgb(124, 123, 123);
+}

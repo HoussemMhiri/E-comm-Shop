@@ -38,6 +38,10 @@ const Slider = () => {
             srcI={el.img}
             srcIe={el.imge}
             width={"100%"}
+            price={"$236 USD"}
+            AllCont={styles.AllCont}
+            pStyle={styles.pStyle}
+            imgCont={styles.imgCont}
           />
         ))}
       </Carousel>

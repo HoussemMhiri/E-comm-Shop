@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import BackgorundImg from "../../../reusebleComp/backgorundImg/BackgorundImg";
 import styles from "./MainStyle.module.css";
 import {
@@ -14,7 +14,17 @@ import {
 } from "../main";
 import Carousel from "../../../reusebleComp/carousel/Carousel";
 import { carouselData } from "../../../reusebleComp/carousel/carouselData";
+import { motion, useInView, useAnimation } from "framer-motion";
 const MainComp = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+  }, [isInView]);
   return (
     <div className={styles.mainCont}>
       <BackgorundImg
@@ -27,7 +37,17 @@ const MainComp = () => {
         styleBtn={styles.btnCont}
       />
       <SectTwo />
-      <div className={styles.BckAllCont}>
+      <motion.div
+        ref={ref}
+        className={styles.BckAllCont}
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
         <BackgorundImg
           h3={"New In"}
           p={"The Anyday Rainboot in Sage"}
@@ -37,7 +57,7 @@ const MainComp = () => {
           styleP={styles.styleP}
           styleBtn={styles.btnCont}
         />
-      </div>
+      </motion.div>
       <div className={styles.carouselAllCont}>
         <Carousel data={carouselData} />
       </div>

@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 
 import styles from "./cardImg.module.css";
-const CardImgChange = ({ p, srcI, srcIe }) => {
+const CardImgChange = ({ p, srcI, srcIe, price, AllCont, pStyle, imgCont }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className={styles.AllCont}>
-      <div
-        className={styles.imgCont}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-      >
+    <div
+      className={AllCont}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div className={imgCont}>
         <img
           className={styles.img}
           src={srcI}
@@ -25,8 +25,8 @@ const CardImgChange = ({ p, srcI, srcIe }) => {
         />
       </div>
       <div className={styles.AllpCont}>
-        <p className={styles.p}>{p}</p>
-        <p className={styles.price}>$236 USD</p>
+        <p className={pStyle}>{p}</p>
+        <p className={styles.price}>{price}</p>
       </div>
     </div>
   );
