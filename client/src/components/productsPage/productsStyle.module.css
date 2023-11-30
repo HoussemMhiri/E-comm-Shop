@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4em 0;
+  margin: 2em 0;
 }
 
 .filterComponent {
@@ -11,4 +11,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btnCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.Btn {
+  width: 10.625rem;
+  height: 47px;
+  border-radius: 5px;
+  background-color: #123026;
+  color: white;
+  border: none;
+  letter-spacing: 1px;
+  margin-top: 1em;
+}
+.Btn:hover {
+  outline: 1px solid #123026;
 }

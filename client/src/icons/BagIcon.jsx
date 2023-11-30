@@ -4,8 +4,8 @@ import Badge from "@mui/material/Badge";
 import { styled } from "@mui/system";
 const CustomBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
-    backgroundColor: "#123026", // Customize badge background color
-    color: "white", // Customize badge text color
+    backgroundColor: "#123026",
+    color: "white",
   },
 }));
 const BagIcon = () => {

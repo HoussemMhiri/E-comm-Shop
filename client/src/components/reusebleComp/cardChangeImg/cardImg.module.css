@@ -22,7 +22,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 0.7s ease, z-index 0s linear 0.5s;
+  transition: opacity 0.5s ease, z-index 0s linear 0.5s;
 }
 
 .imge {
@@ -33,13 +33,13 @@
 .imgCont:hover .imge {
   opacity: 0;
   z-index: 0;
-  transition: opacity 0.7s ease, z-index 0s linear;
+  transition: opacity 0.5s ease, z-index 0s linear;
 }
 
 .imgCont:hover .img {
   opacity: 1;
   z-index: 1;
-  transition: opacity 0.7s ease, z-index 0s linear 0.5s;
+  transition: opacity 0.5s ease, z-index 0s linear 0.5s;
 }
 
 /*******************************/

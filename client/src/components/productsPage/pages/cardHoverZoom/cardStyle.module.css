@@ -1,0 +1,9 @@
+.imgStyle {
+  transition: transform 0.2s ease;
+  margin-bottom: 1em;
+  transform-origin: center center;
+}
+
+.cardCont:hover .imgStyle {
+  transform: scale(1.02);
+}

@@ -1,8 +1,17 @@
 .AllCont {
-  width: 1400px;
+  width: 92%;
+  max-width: 92%;
   display: grid;
-  grid-template-columns: repeat(4, 330px);
-  row-gap: 2em;
+  grid-template-columns: repeat(4, 22%);
+  row-gap: 4em;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 3em;
+}
+
+@media (max-width: 749px) {
+  .AllCont {
+    grid-template-columns: repeat(2, 44%);
+    gap: 2em;
+  }
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import CardImgChange from "../../../reusebleComp/cardChangeImg/CardImgChange";
-import imgI from "../productImgs/whiteBootImg.jpg";
-import imgIe from "../productImgs/whiteBootImge.png";
+
 import styles from "./CardHovImgStyle.module.css";
+import CardZoom from "../cardHoverZoom/CardZoom";
 const CardImgsHover = ({ el }) => {
   return (
     <div className={styles.allCardCont}>
@@ -15,6 +15,13 @@ const CardImgsHover = ({ el }) => {
         pStyle={styles.pStyle}
         imgCont={styles.imgCont}
       />
+      {/*   <CardZoom
+        el={el}
+        price={el.price}
+        AllCont={styles.AllCont}
+        pStyle={styles.pStyle}
+        imgCont={styles.imgCont}
+      /> */}
       <button className={styles.Btn}>Add to cart</button>
     </div>
   );

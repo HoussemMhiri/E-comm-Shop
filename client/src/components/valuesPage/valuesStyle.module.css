@@ -1,0 +1,133 @@
+.backCont {
+  background-image: url("./valuesImgs/ValuesBack1.png");
+  min-height: 45rem;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.backCont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.styleP,
+.styleH3 {
+  position: relative;
+  z-index: 2;
+}
+.styleP {
+  color: white;
+  font-size: 45px;
+  max-width: 51.25rem;
+  font-weight: 600;
+}
+
+.styleH3 {
+  color: rgb(181, 171, 171);
+  font-size: 20px;
+  letter-spacing: 0.6px;
+
+  margin-top: 100px;
+}
+.btnCont {
+  background: none;
+  border: none;
+  pointer-events: none;
+}
+/********************* secSect**********/
+.wwaCont {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 27.25rem;
+}
+
+/********************* ThirdSect**********/
+.backContTwo {
+  background-image: url("./valuesImgs/ValuesBack2.png");
+  min-height: 26.25rem;
+  background-size: cover;
+  background-position: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.backContTwo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.stylePTwo,
+.styleH3Two {
+  position: relative;
+  z-index: 2;
+}
+.stylePTwo {
+  color: rgb(222, 212, 212);
+  font-size: 17px;
+  letter-spacing: 0.6px;
+
+  max-width: 51.25rem;
+}
+
+.styleH3Two {
+  color: white;
+  font-size: 45px;
+  max-width: 51.25rem;
+  font-weight: 600;
+}
+
+/********************* FourthSect**********/
+
+.valuesCont {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/********************* FifthSect**********/
+
+.backContThree {
+  background-image: url("./valuesImgs/ValuesBack3.png");
+  min-height: 26.25rem;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.backCont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.backCont {
+}

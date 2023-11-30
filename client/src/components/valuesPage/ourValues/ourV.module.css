@@ -1,0 +1,31 @@
+.AllinfoCont {
+  max-width: 92.15%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.AllinfoCont h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.infoCont {
+  display: flex;
+}
+
+.colCont {
+  min-height: 20.063rem;
+  max-width: 26.75rem;
+  padding: 0 15px 25px 15px;
+}
+.pCont {
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  line-height: 28.8px;
+  color: rgb(96, 91, 91);
+}
+
+.h4Cont {
+  font-size: 20px;
+  margin-bottom: 10px;
+}

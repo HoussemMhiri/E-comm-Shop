@@ -7,6 +7,7 @@ import { NewsL } from "../homePage/pages/main";
 import FooterComp from "../homePage/pages/footer/FooterComp";
 import ProductComp from "./pages/productsComp/ProductComp";
 import FiltersProduct from "./pages/filterCont/FiltersProduct";
+import BtnShop from "../reusebleComp/shopBtn/BtnShop";
 
 const ProductsPage = () => {
   return (
@@ -23,7 +24,9 @@ const ProductsPage = () => {
       <div className={styles.productCont}>
         <ProductComp />
       </div>
-
+      <div className={styles.btnCont}>
+        <BtnShop pBtn={"Back Home"} styleBtn={styles.Btn} />
+      </div>
       <NewsL />
       <FooterComp />
     </div>

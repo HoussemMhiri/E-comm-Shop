@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import SearchIcon from "../../../icons/SearchIcon";
 import SearchBar from "../searchBar/SearchBar";
-import { TfiClose } from "react-icons/tfi";
 
 const SearchOffCanvas = () => {
   const [show, setShow] = useState(false);

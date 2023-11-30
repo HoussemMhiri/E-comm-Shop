@@ -4,5 +4,46 @@
   max-width: 87%;
   justify-content: space-between;
   align-items: center;
-  min-height: 51px;
+  padding-top: 3em;
+}
+
+.divCont {
+  display: flex;
+}
+
+.productsCont {
+  margin-left: 3em;
+  color: gray;
+}
+
+.num {
+  margin-right: 5px;
+}
+
+.sort {
+  display: flex;
+}
+
+.sortP {
+  margin-right: 1em;
+  color: rgb(81, 77, 77);
+}
+
+.select {
+  border: none;
+  background: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 749px) {
+  .filterCont {
+    display: flex;
+    width: 87%;
+    max-width: 87%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3em;
+    margin-top: 65%;
+  }
 }
