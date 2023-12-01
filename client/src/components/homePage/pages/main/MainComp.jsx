@@ -32,12 +32,15 @@ const MainComp = () => {
         p={"Take up to 40% off select styles."}
         pBtn={"Shop the sale"}
         styleCont={styles.backCont}
+        styleContSec={styles.styleContSec}
         styleH3={styles.styleH3}
         styleP={styles.styleP}
         styleBtn={styles.btnCont}
       />
-      <SectTwo />
-      <motion.div
+      <div className={styles.secTwo}>
+        <SectTwo />
+      </div>
+      {/*   <motion.div
         ref={ref}
         className={styles.BckAllCont}
         variants={{
@@ -68,7 +71,7 @@ const MainComp = () => {
       <SectSeven />
       <SectEight />
       <SectNine />
-      <NewsL />
+      <NewsL /> */}
     </div>
   );
 };

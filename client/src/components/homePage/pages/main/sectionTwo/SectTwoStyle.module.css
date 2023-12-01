@@ -1,10 +1,65 @@
-.flexCont {
+.sectCont {
+  max-width: 1400px;
+  min-height: 40rem;
   display: flex;
   justify-content: space-evenly;
-  width: 95%;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 92%;
+  margin-top: 2em;
 }
+.h3Cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.h3 {
+  max-width: 55.71%;
+  text-align: center;
+  font-size: 2.8rem;
+  height: auto;
+}
+.flexCont {
+  display: flex;
+  justify-content: space-between;
+  max-width: 95%;
+  width: 98%;
+}
+.pStyle {
+  font-weight: 600;
+  font-size: 1.125em;
+}
+@media screen and (max-width: 1600px) {
+  .flexCont {
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 988px) {
+  .flexCont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    place-items: center;
+    row-gap: 20px;
+  }
+  .h3 {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 572px) {
+  .h3 {
+    max-width: 80%;
 
-.sectCont {
+    font-size: 1.8rem;
+  }
+}
+/* .sectCont {
   width: 93%;
   height: 40rem;
   margin: 2em auto;
@@ -14,14 +69,22 @@
   align-items: center;
   justify-content: space-around;
 }
-
+.h3Cont {
+  width: clamp(52%, 52%, 52%);
+}
 .h3 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   text-align: center;
-  width: 52%;
+}
+
+.flexCont {
+  display: flex;
+  justify-content: space-evenly;
+  width: 95%;
 }
 
 .pStyle {
   font-weight: 600;
   font-size: 1.125em;
 }
+ */

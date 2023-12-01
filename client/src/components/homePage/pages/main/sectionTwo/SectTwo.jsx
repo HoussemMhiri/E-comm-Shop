@@ -3,6 +3,9 @@ import styles from "./SectTwoStyle.module.css";
 import { sectTData } from "./dummyData";
 import CardHov from "../../../../reusebleComp/cardHover/CardHov";
 import { motion, useInView, useAnimation } from "framer-motion";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 const SectTwo = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -16,19 +19,21 @@ const SectTwo = () => {
 
   return (
     <div ref={ref} className={styles.sectCont}>
-      <motion.h3
-        variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        className={styles.h3}
-        initial="hidden"
-        animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.5 }}
-      >
-        Socially and environmentally progressive outdoor footwear that helps you
-        #BeOutside
-      </motion.h3>
+      <div className={styles.h3Cont}>
+        <motion.h3
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className={styles.h3}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          Socially and environmentally progressive outdoor footwear that helps
+          you #BeOutside
+        </motion.h3>
+      </div>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },

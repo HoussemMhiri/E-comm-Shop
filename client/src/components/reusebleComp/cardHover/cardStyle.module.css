@@ -1,18 +1,24 @@
 .cardCont {
-  height: 377px;
-  width: 319px;
-  position: relative;
-  overflow: hidden;
+  max-width: 319px;
+  min-height: auto;
   cursor: pointer;
 }
 
 .img {
-  width: 319px;
-  height: 330px;
+  width: 100%;
+  height: auto;
   transition: transform 0.2s ease;
   margin-bottom: 1em;
 }
 
+@media screen and (max-width: 1200px) {
+  .img {
+    width: 95%;
+    height: auto;
+    transition: transform 0.2s ease;
+    margin-bottom: 1em;
+  }
+}
 .cardCont:hover .img {
   transform: scale(1.02);
 }
