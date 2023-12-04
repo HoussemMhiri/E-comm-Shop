@@ -1,14 +1,10 @@
 .carousel {
-  display: flex;
-  min-height: 400px;
-  width: 100%;
-  max-width: 1520px;
+  margin-bottom: -18em;
 }
-
 .carousel_wrapper {
   position: relative;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  min-height: 45rem;
 }
 
 .carousel_card {
@@ -20,17 +16,18 @@
   opacity: 0;
   pointer-events: none;
   transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .carousel_card_active {
   opacity: 1;
   pointer-events: visible;
 }
-
 .carousel_img {
   object-fit: cover;
   width: 100%;
-  height: 720px;
+  height: 100%;
 }
 
 .carousel_img3 {
@@ -39,16 +36,14 @@
 
 .card_overlay {
   position: absolute;
-  width: 100%;
-  min-height: 300px;
+  max-width: 100%;
+  min-height: 18.75rem;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 15em;
-  color: white;
   justify-content: space-evenly;
 }
-
 .card_p {
   font-size: 18px;
   color: rgb(255, 247, 247);
@@ -56,14 +51,15 @@
 }
 
 .card_title {
-  font-size: 52px;
-  width: 550px;
+  font-size: 3.25em;
+  max-width: 34.375rem;
   text-align: center;
 }
 
 .styleBtn {
-  width: 139px;
-  height: 47px;
+  max-width: 8.688em;
+  width: 8.688em;
+  min-height: 2.938em;
   background-color: white;
   border: none;
   border-radius: 5px;
@@ -74,13 +70,13 @@
 .styleBtn:hover {
   transform: scale(1.01);
 }
+
 .allCarouselControlContainer {
   position: absolute;
   top: 48.5em;
   width: 100%;
   border-bottom: 1px solid rgb(219, 208, 208);
 }
-
 .carousel_arrowsCont {
   position: absolute;
   top: -2.813em;

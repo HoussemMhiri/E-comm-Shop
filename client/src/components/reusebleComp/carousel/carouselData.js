@@ -10,7 +10,7 @@ export const carouselData = [
     p: "The Anyday Rainboot is now back in stock!",
   },
   {
-    img: "img/Carousel3.png",
+    img: "img/firstBck.png",
     h3: "The Anyday Rain Boot Is Now Available in Sage.",
     p: "Shop the waterproof essentials",
   },

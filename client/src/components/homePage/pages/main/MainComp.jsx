@@ -15,6 +15,7 @@ import {
 import Carousel from "../../../reusebleComp/carousel/Carousel";
 import { carouselData } from "../../../reusebleComp/carousel/carouselData";
 import { motion, useInView, useAnimation } from "framer-motion";
+import BotCarros from "../../../reusebleComp/booststrapCarrousel/BotCarros";
 const MainComp = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -40,7 +41,7 @@ const MainComp = () => {
       <div className={styles.secTwo}>
         <SectTwo />
       </div>
-      {/*   <motion.div
+      <motion.div
         ref={ref}
         className={styles.BckAllCont}
         variants={{
@@ -61,12 +62,16 @@ const MainComp = () => {
           styleBtn={styles.btnCont}
         />
       </motion.div>
-      <div className={styles.carouselAllCont}>
+      <BotCarros />
+      {/* <div className={styles.carouselAllCont}>
         <Carousel data={carouselData} />
-      </div>
+      </div> */}
       <SectThree />
       <SectFour />
       <SectFive />
+      {/*   
+     
+     
       <SectSix />
       <SectSeven />
       <SectEight />

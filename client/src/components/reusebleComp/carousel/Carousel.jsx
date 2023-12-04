@@ -4,6 +4,10 @@ import BtnShop from "../shopBtn/BtnShop";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { BsPause } from "react-icons/bs";
 import { MdPlayArrow } from "react-icons/md";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 const Carousel = ({ data }) => {
   const [current, setCurrent] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
