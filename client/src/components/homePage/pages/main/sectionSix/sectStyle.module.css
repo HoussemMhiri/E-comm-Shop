@@ -1,5 +1,6 @@
 .allCont {
-  height: 624px;
+  max-width: 46rem;
+  min-height: 39rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,11 +9,11 @@
 }
 
 .secCont {
-  width: 734px;
+  max-width: 100%;
 }
 
 .descCont {
-  width: 780px;
+  max-width: 100%;
   margin-bottom: 2em;
 }
 .Accord {
@@ -21,6 +22,12 @@
   --bs-accordion-active-bg: none;
   --bs-accordion-active-color: none;
   --bs-accordion-btn-focus-box-shadow: none;
+  width: 736px;
+}
+@media screen and (max-width: 760px) {
+  .Accord {
+    width: 100% !important;
+  }
 }
 .Accord:hover {
   --bs-accordion-btn-bg: rgb(238, 230, 230);
@@ -46,7 +53,7 @@
 }
 
 .descP {
-  font-size: 17px;
+  font-size: 1.563em;
   color: rgb(110, 104, 104);
   text-align: center;
 }

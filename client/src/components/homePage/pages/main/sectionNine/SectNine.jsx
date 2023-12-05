@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./sectN.module.css";
 import { motion, useInView, useAnimation } from "framer-motion";
+import Col from "react-bootstrap/Col";
 const SectNine = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -19,7 +20,7 @@ const SectNine = () => {
   ];
   return (
     <motion.div
-      className={styles.allCont}
+      className={`container-fluid ${styles.allCont}`}
       ref={ref}
       variants={{
         hidden: { opacity: 0, y: 75 },
@@ -40,9 +41,17 @@ const SectNine = () => {
           @Thesus_Outdoors
         </a>
       </h3>
-      <div className={styles.imgsCont}>
-        {imgs.map((el) => (
-          <img className={styles.imgs} src={el} alt="" />
+      <div className={`row ${styles.imgsCont}`}>
+        {imgs.map((el, index) => (
+          <Col key={index} xs={12} sm={6} lg={3} className={styles.imgCol}>
+            <img
+              className={`img-fluid ${styles.imgs} ${
+                index === 1 ? styles.secondImage : ""
+              }`}
+              src={el}
+              alt=""
+            />
+          </Col>
         ))}
       </div>
     </motion.div>

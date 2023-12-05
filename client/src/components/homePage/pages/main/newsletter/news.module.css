@@ -1,5 +1,5 @@
 .allCont {
-  height: 400px;
+  min-height: 25rem;
   background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
@@ -9,8 +9,11 @@
 }
 
 .desc {
-  width: 600px;
   margin-bottom: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .h3 {
   font-size: 40px;
@@ -19,14 +22,16 @@
 .p {
   font-size: 22px;
   color: rgb(99, 96, 96);
+  max-width: 43.75rem;
 }
 .inp {
-  height: 48px;
-  width: 277px;
+  min-height: 3rem;
+  width: 17.313rem;
   border: none;
   border-radius: 5px;
   border: 1px solid black;
   padding: 10px;
+  margin-bottom: 1em;
 }
 
 .styleBtn {
@@ -34,8 +39,8 @@
   background: none;
   background-color: #123026;
   color: white;
-  height: 48px;
-  width: 150px;
+  min-height: 3rem;
+  width: 9.375rem;
   border-radius: 5px;
   font-weight: 600;
   font-size: 17px;

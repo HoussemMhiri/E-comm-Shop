@@ -4,7 +4,7 @@ import styles from "./cardFstyle.module.css";
 const CardFive = ({ imgs, p, cardImg }) => {
   return (
     <div className={styles.cardCont}>
-      <img src={imgs} alt="" className={cardImg} />
+      <img src={imgs} alt="" className={`${cardImg} img-fluid`} />
       <div className={styles.cardDesc}>
         <FleshBtn p={p} />
       </div>

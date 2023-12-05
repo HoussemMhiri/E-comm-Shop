@@ -69,14 +69,11 @@ const MainComp = () => {
       <SectThree />
       <SectFour />
       <SectFive />
-      {/*   
-     
-     
       <SectSix />
       <SectSeven />
       <SectEight />
       <SectNine />
-      <NewsL /> */}
+      <NewsL />
     </div>
   );
 };
