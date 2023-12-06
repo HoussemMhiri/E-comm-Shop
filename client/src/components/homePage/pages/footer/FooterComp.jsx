@@ -16,14 +16,15 @@ const FooterComp = () => {
     "Contact information",
   ];
   return (
-    <div className={styles.allCont}>
-      <div className={styles.allContOne}>
-        <div className={styles.allContLeft}>
+    <div className={`container-fluid ${styles.allCont}`}>
+      <div className={`row ${styles.allContOne}`}>
+        <div className={`col col-md-4 ${styles.allContOneColOne}`}>
           <img
             src="https://thesusoutdoors.com/cdn/shop/files/Thesus-white-logo.png?v=1686324987&width=1100"
             alt=""
             height={50}
             width={99}
+            className={`img-fluid`}
           />
           <p className={styles.allContLefP}>
             Socially and environmentally progressive outdoor footwear
@@ -35,34 +36,39 @@ const FooterComp = () => {
             <IoLogoPinterest className={styles.logo} />
           </div>
         </div>
-        <div className={styles.allContGrid}>
-          {gridData.map((el) => (
-            <div>
+        <div className={`col col-md-8 ${styles.allContGrid}`}>
+          {gridData.map((el, index) => (
+            <div key={index} className={`col  ${styles.contColGrid}`}>
               <h6 className={styles.h6}>{el.title}</h6>
               <div>
-                {el.more.map((el) => (
-                  <p className={styles.p}>{el}</p>
+                {el.more.map((item, i) => (
+                  <p key={i} className={styles.p}>
+                    {item}
+                  </p>
                 ))}
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className={styles.companyContAll}>
-        <div className={styles.companyCont}>
+      <div className={`container-fluid ${styles.companyContAll}`}>
+        <div className={` ${styles.companyCont}`}>
           {iconsData.map((el) => (
-            <div className={styles.companyDiv}>
-              <img className={styles.company} src={el} alt="" />
+            <div className={`${styles.companyDiv}`}>
+              <img className={`img-fluid ${styles.company}`} src={el} alt="" />
             </div>
           ))}
         </div>
         <div className={styles.spansCont}>
-          <span style={{ fontSize: "13px", marginTop: "10px" }}>
-            {" "}
-            &#169; 2023,
-          </span>
+          <div>
+            <span style={{ fontSize: "13px", marginTop: "10px" }}>
+              &#169; 2023,
+            </span>
+          </div>
           {footers.map((el) => (
-            <span className={styles.spans}>{el}</span>
+            <div className={styles.spanCont}>
+              <span className={styles.spans}>{el}</span>
+            </div>
           ))}
         </div>
       </div>

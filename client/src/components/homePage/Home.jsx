@@ -8,7 +8,7 @@ const Home = () => {
     <section>
       <HeaderNav />
       <MainComp />
-      {/*<FooterComp /> */}
+      <FooterComp /> 
     </section>
   );
 };
