@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
+import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "./sliderStyle.module.css";
 import CardImgChange from "../cardChangeImg/CardImgChange";
 import { cardData } from "../../homePage/pages/main/sectionThree/cardImgData";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
-import Carousel from "react-multi-carousel";
 
 const Slider = () => {
   const responsive = {
@@ -27,17 +25,15 @@ const Slider = () => {
       items: 1,
     },
   };
-
   return (
-    <div className={styles.AllCardsCont}>
+    <div className={styles.sliderCont}>
       <Carousel responsive={responsive}>
-        {cardData.map((el) => (
+        {cardData.map((el, i) => (
           <CardImgChange
-            key={Math.random()}
+            key={i}
             p={el.title}
             srcI={el.img}
             srcIe={el.imge}
-            width={"100%"}
             price={"$236 USD"}
             AllCont={styles.AllCont}
             pStyle={styles.pStyle}

@@ -19,7 +19,14 @@ const ProductsPage = () => {
         p={"The Weekend Boot"}
       />
       <div className={styles.filterComponent}>
-        <FiltersProduct />
+        <FiltersProduct
+          filterCont={styles.filterCont}
+          rowCont={styles.rowCont}
+          divCont={styles.divCont}
+          sortP={styles.sortP}
+          select={styles.select}
+          productsCont={styles.productsCont}
+        />
       </div>
       <div className={styles.productCont}>
         <ProductComp />

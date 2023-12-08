@@ -3,9 +3,7 @@ import styles from "./SectTwoStyle.module.css";
 import { sectTData } from "./dummyData";
 import CardHov from "../../../../reusebleComp/cardHover/CardHov";
 import { motion, useInView, useAnimation } from "framer-motion";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+
 const SectTwo = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -45,7 +43,12 @@ const SectTwo = () => {
         className={styles.flexCont}
       >
         {sectTData.map((el) => (
-          <CardHov pStyle={styles.pStyle} p={el.name} imge={el.img} />
+          <CardHov
+            key={Math.random()}
+            pStyle={styles.pStyle}
+            p={el.name}
+            imge={el.img}
+          />
         ))}
       </motion.div>
     </div>

@@ -77,7 +77,9 @@ const HeaderNav = () => {
                 className={styles.categories}
               >
                 {cat.map((el) => (
-                  <div className={`${styles.spans} p-2`}>{el}</div>
+                  <div key={Math.random()} className={`${styles.spans} p-2`}>
+                    {el}
+                  </div>
                 ))}
               </Stack>
             ) : (

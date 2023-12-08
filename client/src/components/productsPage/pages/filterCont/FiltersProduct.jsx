@@ -1,32 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import styles from "./filterStyle.module.css";
-const FiltersProduct = () => {
+import SideBtn from "../../../reusebleComp/sideBtn/SideBtn";
+import Filter from "./Filter";
+const FiltersProduct = ({
+  filterCont,
+  rowCont,
+  divCont,
+  sortP,
+  select,
+  productsCont,
+}) => {
   const sizes = [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46];
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [screenWidth]);
+
   return (
-    <div className={styles.filterCont}>
-      <div className={styles.divCont}>
-        <p className={styles.sortP}>Filter:</p>
-
-        <select name="" id="" className={styles.select}>
-          <option value="">Size</option>
-          {sizes.map((el) => (
-            <option value="">{el}</option>
-          ))}
-        </select>
-      </div>
-      <div className={`${styles.divCont} ${styles.sortByCont}`}>
-        <div className={styles.sort}>
-          <p className={styles.sortP}>Sort by:</p>
-
-          <select name="" id="" className={styles.select}>
-            <option value="">Featured</option>
-            <option value="">Price: Low To High</option>
-            <option value="">Price: High To Low</option>
-          </select>
-        </div>
-        <div className={`${styles.divCont} ${styles.productsCont}`}>
-          <p className={styles.num}>8</p> <p>products</p>
+    <div className={`container-fluid ${styles.filterCont}`}>
+      <div className={`row ${styles.rowCont}`}>
+        {screenWidth > 750 ? (
+          <Filter
+            divCont={styles.divCont}
+            sortP={styles.sortP}
+            select={styles.select}
+          />
+        ) : (
+          <div className="col col-7">
+            <SideBtn />
+          </div>
+        )}
+        <div
+          className={`col col-lg-1  ${styles.divCont} ${styles.productsCont}`}
+        >
+          <p>8 products</p>
         </div>
       </div>
     </div>

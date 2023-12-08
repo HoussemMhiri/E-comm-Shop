@@ -21,7 +21,9 @@ const SideMenu = ({ cat, categories, spans }) => {
         <Offcanvas.Body>
           <Stack gap={1} className={categories}>
             {cat.map((el) => (
-              <div className={`${spans} p-2`}>{el}</div>
+              <div key={Math.random()} className={`${spans} p-2`}>
+                {el}
+              </div>
             ))}
           </Stack>
         </Offcanvas.Body>

@@ -14,7 +14,11 @@ const SectSix = () => {
         <div className={`${styles.secCont}`}>
           <Accordion>
             {accordData.map((el) => (
-              <Accordion.Item eventKey={el.event} className={styles.Accord}>
+              <Accordion.Item
+                eventKey={el.event}
+                key={Math.random()}
+                className={styles.Accord}
+              >
                 <Accordion.Header className={styles.AccordHead}>
                   <span className={styles.AccordIcon}>{el.icon}</span>{" "}
                   <span className={styles.AccordTitle}>{el.title}</span>

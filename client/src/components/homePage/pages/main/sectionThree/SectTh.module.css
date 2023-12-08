@@ -1,5 +1,5 @@
 .sectThCont {
-  height: 50.5rem;
+  min-height: 50.5rem;
   background-color: #f3f3f3;
   display: flex;
   flex-direction: column;

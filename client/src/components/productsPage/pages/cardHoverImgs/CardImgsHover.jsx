@@ -5,7 +5,7 @@ import styles from "./CardHovImgStyle.module.css";
 import CardZoom from "../cardHoverZoom/CardZoom";
 const CardImgsHover = ({ el }) => {
   return (
-    <div className={styles.allCardCont}>
+    <div>
       <CardImgChange
         p={el.title}
         srcI={el.imgI}

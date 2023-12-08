@@ -13,7 +13,7 @@ const SectEight = () => {
       <h3 className={styles.h3}>In the Press</h3>
       <div className={`row ${styles.logosCont}`}>
         {logos.map((el) => (
-          <Col sm={6} lg={3}>
+          <Col key={Math.random()} sm={6} lg={3}>
             <img src={el} alt="" className=" img-fluid" />
           </Col>
         ))}

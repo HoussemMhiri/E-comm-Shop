@@ -54,7 +54,7 @@ const FooterComp = () => {
       <div className={`container-fluid ${styles.companyContAll}`}>
         <div className={` ${styles.companyCont}`}>
           {iconsData.map((el) => (
-            <div className={`${styles.companyDiv}`}>
+            <div key={Math.random()} className={`${styles.companyDiv}`}>
               <img className={`img-fluid ${styles.company}`} src={el} alt="" />
             </div>
           ))}
@@ -66,7 +66,7 @@ const FooterComp = () => {
             </span>
           </div>
           {footers.map((el) => (
-            <div className={styles.spanCont}>
+            <div key={Math.random()} className={styles.spanCont}>
               <span className={styles.spans}>{el}</span>
             </div>
           ))}

@@ -8,7 +8,7 @@ const BotCarros = () => {
   return (
     <Carousel data-bs-theme="dark">
       {carouselData.map((el) => (
-        <Carousel.Item>
+        <Carousel.Item key={Math.random()}>
           <img className="d-block w-100" src={el.img} alt="First slide" />
           <Carousel.Caption className={styles.Info}>
             <h5 className={styles.card_title}>{el.h3}</h5>

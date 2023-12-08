@@ -30,7 +30,7 @@ const SectFive = () => {
       <h3 className={styles.h3}>Thesus Bestsellers</h3>
       <div className={`row ${styles.cardsCont}`}>
         {cardData.map((el, index) => (
-          <Col sm={6} lg={3}>
+          <Col key={index} sm={6} lg={3}>
             <CardFive
               key={index}
               p={el.btnP}
