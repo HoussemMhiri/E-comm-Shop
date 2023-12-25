@@ -12,7 +12,6 @@ import BtnShop from "../reusebleComp/shopBtn/BtnShop";
 const ProductsPage = () => {
   return (
     <div>
-      <HeaderNav />
       <Banner
         backgroundImageB={image}
         h3={"Versatile. Sustainable. Oh So Comfy!"}
@@ -34,8 +33,6 @@ const ProductsPage = () => {
       <div className={styles.btnCont}>
         <BtnShop pBtn={"Back Home"} styleBtn={styles.Btn} />
       </div>
-      <NewsL />
-      <FooterComp />
     </div>
   );
 };

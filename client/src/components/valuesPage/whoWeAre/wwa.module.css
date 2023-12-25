@@ -17,3 +17,18 @@
   font-weight: 400;
   letter-spacing: 0.6px;
 }
+
+@media (max-width: 600px) {
+  .allWWACont {
+    max-width: 55.34%;
+    margin-bottom: 1em;
+  }
+  .h2 {
+    font-size: 35px;
+    margin-top: 1em;
+  }
+
+  .p {
+    font-size: 16px;
+  }
+}

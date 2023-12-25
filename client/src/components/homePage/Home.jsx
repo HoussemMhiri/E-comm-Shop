@@ -6,9 +6,7 @@ import FooterComp from "./pages/footer/FooterComp";
 const Home = () => {
   return (
     <section>
-      <HeaderNav />
       <MainComp />
-      <FooterComp /> 
     </section>
   );
 };

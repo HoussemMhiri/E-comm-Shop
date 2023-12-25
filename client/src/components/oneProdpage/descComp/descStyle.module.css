@@ -1,0 +1,38 @@
+.allDescCont {
+  max-width: 27rem;
+}
+
+.select {
+  height: 2.813rem;
+  border-color: rgb(109, 106, 106);
+  cursor: pointer;
+}
+.select:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: rgb(109, 106, 106);
+}
+
+.select:hover {
+  outline: 1px solid gray;
+}
+
+.Btn {
+  max-width: 26rem;
+  width: 100%;
+  background: none;
+  padding: 0 30px;
+  min-height: 2.8rem;
+  border-radius: 5px;
+  margin: 2em 0;
+  font-weight: 600;
+}
+.Btn:hover {
+  outline: 1px solid;
+}
+.desc p {
+  color: gray;
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  line-height: 29px;
+}

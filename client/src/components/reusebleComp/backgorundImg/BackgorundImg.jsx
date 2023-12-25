@@ -12,7 +12,7 @@ const BackgorundImg = ({
   styleBtn,
 }) => {
   return (
-    <div className={styleCont}>
+    <div className={`${styleCont}`}>
       <div className={styleContSec}>
         <h3 className={styleH3}>{h3}</h3>
         <p className={styleP}>{p}</p>

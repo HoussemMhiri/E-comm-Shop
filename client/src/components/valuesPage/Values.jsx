@@ -5,15 +5,17 @@ import BackgorundImg from "../reusebleComp/backgorundImg/BackgorundImg";
 import FooterComp from "../homePage/pages/footer/FooterComp";
 import WWA from "./whoWeAre/WWA";
 import OurValues from "./ourValues/OurValues";
+import { bannerInfo } from "./banners/bannerData";
+import Banners from "./banners/Banners";
+
 const Values = () => {
   return (
     <div>
-      <HeaderNav />
       <div className={styles.allContOne}>
         <BackgorundImg
           h3={"THESUS OUTDOORS"}
           p={"We believe that we can all do better by people and the planet"}
-          styleCont={styles.backCont}
+          styleCont={`container-fluid ${styles.backCont}`}
           styleH3={styles.styleH3}
           styleP={styles.styleP}
           styleBtn={styles.btnCont}
@@ -54,7 +56,22 @@ const Values = () => {
           p2="We are always looking to be better at what we do. That means, we are constantly on the lookout for new and innovative materials and partners. If you have any suggestions or direction, please reach out to us at support@thesusoutdoors.com."
         />
       </div>
-      <FooterComp />
+      <div className={styles.bannersCont}>
+        {bannerInfo.map((el) => (
+          <Banners
+            key={el.id}
+            el={el}
+            AllCont={styles.AllCont}
+            thirdCont={styles.thirdCont}
+            lastOne={styles.lastOne}
+            Row={styles.Row}
+            imgs={styles.imgs}
+            desc={styles.desc}
+            h3={styles.h3}
+            p={styles.p}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -6,7 +6,8 @@
 }
 
 .inp {
-  width: 50%;
+  max-width: 47rem;
+  width: 100%;
   height: 2.813em;
   padding: 20px;
   position: relative;
@@ -22,6 +23,7 @@
 }
 
 .closeMark {
+  font-size: 18px;
   margin-left: 1em;
 }
 
@@ -33,12 +35,72 @@
 
 .searchMark {
   position: absolute;
-  right: 17em;
-  top: 1.7em;
+  right: 28%;
+  top: 48%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
-
 .searchMark:hover {
   transform: scale(1.1);
   color: grey;
+  position: absolute;
+  right: 28%;
+  top: 48%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .searchMark {
+    position: absolute;
+    right: 12%;
+    top: 48%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .searchMark:hover {
+    transform: scale(1.1);
+    color: grey;
+    position: absolute;
+    right: 12%;
+    top: 48%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+@media (width: 1024px) {
+  .searchMark {
+    position: absolute;
+    right: 18%;
+    top: 48%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .searchMark:hover {
+    transform: scale(1.1);
+    color: grey;
+    position: absolute;
+    right: 18%;
+    top: 48%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+@media (max-width: 550px) {
+  .searchMark {
+    position: absolute;
+    right: 20%;
+    top: 48%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .searchMark:hover {
+    transform: scale(1.1);
+    color: grey;
+    position: absolute;
+    right: 20%;
+    top: 48%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
 }

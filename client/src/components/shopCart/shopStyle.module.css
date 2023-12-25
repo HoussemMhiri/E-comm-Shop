@@ -1,0 +1,42 @@
+.ShopCont {
+  margin-top: 6em;
+  margin-bottom: 3em;
+}
+
+.fstCont {
+  max-width: 92.15%;
+}
+
+.fstCont button {
+  display: inline-block;
+  border: none;
+  background: none;
+  max-width: 9.6rem;
+  padding: 0;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid black;
+  height: 25px;
+  text-align: left;
+}
+.fstCont button:hover {
+  border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .qtity {
+    display: none;
+  }
+}
+
+.ps {
+  font-size: 12px;
+  padding: 0;
+  font-weight: 600;
+}
+.ps:last-child {
+  text-align: end;
+}
+.secCont {
+  border-bottom: 1px solid gray;
+}

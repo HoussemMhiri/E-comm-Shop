@@ -73,7 +73,6 @@ const MainComp = () => {
       <SectSeven />
       <SectEight />
       <SectNine />
-      <NewsL />
     </div>
   );
 };

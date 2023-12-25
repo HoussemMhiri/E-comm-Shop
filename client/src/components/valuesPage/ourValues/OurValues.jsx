@@ -6,8 +6,8 @@ const OurValues = () => {
     <div className={styles.AllinfoCont}>
       <h2>Our Values</h2>
       <div className={styles.infoCont}>
-        {ourValuesData.map((el) => (
-          <div className={styles.colCont}>
+        {ourValuesData.map((el, i) => (
+          <div key={i} className={styles.colCont}>
             <h4 className={styles.h4Cont}>{el.title}</h4>
             <p className={styles.pCont}>{el.p}</p>
           </div>

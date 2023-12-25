@@ -1,0 +1,60 @@
+.logCont {
+  margin: 0 auto;
+  max-width: 30rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 27.5rem;
+  padding: 36px 15px;
+}
+.h1 {
+  font-size: 45px;
+  color: #123026;
+}
+.customCss {
+  max-width: 27.875rem;
+  min-width: 72px;
+  height: 2.813rem;
+  min-height: 2px;
+  border-radius: 0;
+  margin: 1px;
+  padding: 15px;
+  border-color: gray;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+.customCss:hover {
+  outline: 2px solid rgb(173, 167, 167);
+}
+.customCss:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.55);
+  border: none;
+}
+
+.btnCss {
+  background-color: #123026;
+  color: white;
+  max-width: 7.625rem;
+  width: 7.625rem;
+  min-height: 2.938rem;
+  transition: outline 0.2s ease-in-out;
+  margin-top: 1em;
+}
+.btnCss:hover {
+  background-color: #123026;
+  color: white;
+  outline: 1px solid #123026;
+}
+.createBtn {
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+  max-width: 7rem;
+}
+.createBtn:hover {
+  font-weight: 600;
+}
