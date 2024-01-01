@@ -1,9 +1,40 @@
-.imgStyle {
-  transition: transform 0.2s ease;
-  margin-bottom: 1em;
-  transform-origin: center center;
+.Btn {
+  width: 100%;
+  border: none;
+  background: none;
+  background-color: #123026;
+  color: white;
+  padding: 7px;
+  border-radius: 20px;
+  font-weight: 600;
 }
 
-.cardCont:hover .imgStyle {
+.Btn:hover {
+  background-color: rgb(124, 123, 123);
+}
+
+.pStyle {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.AllCont {
+  max-width: 100%;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.imgStyle:hover {
+  transition: all 0.2s ease-in-out;
   transform: scale(1.02);
+}
+
+.AllCont:hover .pStyle {
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+
+.Save {
+  font-size: 18px;
+  cursor: pointer;
 }

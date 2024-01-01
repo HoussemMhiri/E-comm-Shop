@@ -1,6 +1,15 @@
 import React from "react";
 import styles from "./shopStyle.module.css";
+import ShopProd from "./shopProd/ShopProd";
+import PaymentInstr from "./paymentPlusInstr/PaymentInstr";
+import EmptyShop from "./emptyShop/EmptyShop";
 const ShopCartComp = () => {
+  const imageContext = require.context(
+    "./shopProd/theProd/img",
+    false,
+    /\.(png|jpe?g|svg)$/
+  );
+  const images = imageContext.keys().map(imageContext);
   return (
     <div className={`container-fluid  ${styles.ShopCont}`}>
       <div className={`container-fluid   ${styles.fstCont}`}>
@@ -18,6 +27,16 @@ const ShopCartComp = () => {
           <p className={`col-md-1 col-3  text-secondary ${styles.ps}`}>TOTAL</p>
         </div>
       </div>
+      <div className="my-5">
+        {images.map((el, i) => (
+          <ShopProd key={i} el={el} />
+        ))}
+      </div>
+      <div>
+        <PaymentInstr />
+      </div>
+
+      {/*    <EmptyShop /> */}
     </div>
   );
 };

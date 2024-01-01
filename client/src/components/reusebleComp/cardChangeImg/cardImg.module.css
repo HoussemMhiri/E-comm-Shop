@@ -36,3 +36,10 @@
 .AllpCont {
   margin-top: 0.5em;
 }
+
+/************************************/
+
+.Save {
+  font-size: 18px;
+  cursor: pointer;
+}

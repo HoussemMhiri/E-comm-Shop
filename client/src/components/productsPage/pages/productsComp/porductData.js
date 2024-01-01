@@ -102,4 +102,28 @@ export const zoomImgs = [
     title: "Anyday Rain Boot In Black",
     price: "$268 USD",
   },
+  {
+    id: 5,
+    img: zoom1,
+    title: "The Modern Winter Boot in Beige",
+    price: "$309 USD",
+  },
+  {
+    id: 6,
+    img: zoom2,
+    title: "The Modern Winter Boot in Black",
+    price: "$309 USD",
+  },
+  {
+    id: 7,
+    img: zoom3,
+    title: "Anyday Rain Boot In Sage",
+    price: "$268 USD",
+  },
+  {
+    id: 8,
+    img: zoom4,
+    title: "Anyday Rain Boot In Black",
+    price: "$268 USD",
+  },
 ];

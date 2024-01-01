@@ -8,16 +8,19 @@ import OneProdPage from "./components/oneProdpage/OneProdPage";
 import HeaderNav from "./components/homePage/pages/navBar/HeaderNav";
 import FooterComp from "./components/homePage/pages/footer/FooterComp";
 import ShopCartComp from "./components/shopCart/ShopCartComp";
+import LikedProd from "./components/likedPoductsPage/LikedProd";
+
 function App() {
   return (
     <div className="App">
       <HeaderNav />
-      {/* {<Home />} */}
-      {/*  {<ProductsPage />} */}
+      {/*    <Home /> */}
+      <ProductsPage />
       {/*  {<Values />} */}
       {/*       {<SignComp />} */}
       {/*  {<OneProdPage />} */}
-      <ShopCartComp />
+      {/*   <ShopCartComp />  */}
+      {/*  <LikedProd /> */}
       <FooterComp />
     </div>
   );

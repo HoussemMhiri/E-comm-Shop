@@ -1,0 +1,16 @@
+.descCont h6 {
+  color: #123026;
+  display: inline-block;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.1s ease;
+}
+
+.descCont p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.descCont h6:hover {
+  border-color: black;
+}

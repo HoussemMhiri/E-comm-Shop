@@ -1,0 +1,48 @@
+.ShopCont {
+  margin-top: 5em;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fstCont {
+  max-width: 92.15%;
+  padding-bottom: 2em;
+  border-bottom: 1px solid gray;
+}
+
+.fstCont button {
+  display: inline-block;
+  border: none;
+  background: none;
+  max-width: 9.6rem;
+  padding: 0;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid black;
+  height: 25px;
+  text-align: left;
+}
+.fstCont button:hover {
+  border-bottom: 2px solid black;
+}
+
+.AllCont {
+  width: 92.15%;
+  max-width: 92.15%;
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  row-gap: 4em;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 3em;
+}
+
+@media (max-width: 749px) {
+  .AllCont {
+    grid-template-columns: repeat(2, 44%);
+    gap: 2em;
+  }
+}

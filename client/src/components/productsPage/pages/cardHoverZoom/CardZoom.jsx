@@ -1,15 +1,25 @@
 import React from "react";
 import styles from "./cardStyle.module.css";
 
-const CardZoom = ({ el, price, AllCont, pStyle, imgCont }) => {
+import SaveItem from "../../../reusebleComp/saveLike/SaveItem";
+const CardZoom = ({ el, likeState }) => {
   return (
-    <div className={`${AllCont} ${styles.cardCont}`}>
-      <div className={imgCont}>
-        <img src={el.img} alt="" className={`${imgCont} ${styles.imgStyle}`} />
+    <div className={` ${styles.AllCont}`}>
+      <div className={styles.imgCont}>
+        <img src={el.img} alt="" className={`img-fluid ${styles.imgStyle}`} />
       </div>
-      <div>
-        <p className={pStyle}>{el.title}</p>
-        <p>{price}</p>
+      {likeState ? (
+        <div className={`${styles.Save}`}>
+          <SaveItem />
+        </div>
+      ) : (
+        ""
+      )}
+
+      <div className="mt-2">
+        <p className={styles.pStyle}>{el.title}</p>
+        <p className={styles.price}>{el.price}</p>
+        <button className={styles.Btn}>Add to cart</button>
       </div>
     </div>
   );

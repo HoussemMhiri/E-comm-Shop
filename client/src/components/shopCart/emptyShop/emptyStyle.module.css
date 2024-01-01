@@ -1,0 +1,22 @@
+.btn {
+  width: 100%;
+  max-width: 13.313rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #123026;
+  color: white;
+  letter-spacing: 0.6px;
+  padding: 10px 0 30px;
+  margin: 1em 0;
+}
+
+.btn:hover {
+  outline: 1px solid #123026;
+}
+
+.h1 {
+  font-size: 2.4rem;
+  letter-spacing: 0.6px;
+  color: #123026;
+}

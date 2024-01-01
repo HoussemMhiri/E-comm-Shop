@@ -1,0 +1,55 @@
+.AllCont {
+  max-width: 92.15%;
+  border-top: 1px solid gray;
+  padding-top: 3em;
+  margin-bottom: 5em;
+}
+
+.textArea {
+  max-width: 21.75rem;
+  min-height: 6.25rem;
+  height: 6.25rem;
+  border-radius: 0;
+  margin-top: 1em;
+}
+.textArea:focus {
+  box-shadow: none;
+  border-color: gray;
+}
+
+.sub {
+  font-weight: 600;
+  margin-right: 2em;
+  font-size: 18px;
+}
+
+.money {
+  font-size: 18px;
+}
+
+.parg {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+.btn {
+  width: 100%;
+  max-width: 22rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #123026;
+  color: white;
+  letter-spacing: 0.6px;
+}
+
+.btn:hover {
+  outline: 1px solid #123026;
+}
+
+@media (max-width: 768px) {
+  .payCont {
+    text-align: center;
+  }
+}

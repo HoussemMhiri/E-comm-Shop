@@ -6,12 +6,12 @@ import CardZoom from "../cardHoverZoom/CardZoom";
 const ProductComp = () => {
   return (
     <div className={styles.AllCont}>
-      {productData.map((el) => (
-        <CardImgsHover key={el.id} el={el} />
-      ))}
-      {/* {zoomImgs.map((el) => (
-        <CardImgsHover key={el.id} el={el} />
+      {/*     {productData.map((el) => (
+        <CardImgsHover key={el.id} el={el} likeState={true} />
       ))} */}
+      {zoomImgs.map((el) => (
+        <CardZoom key={el.id} el={el} likeState={true} />
+      ))}
     </div>
   );
 };
